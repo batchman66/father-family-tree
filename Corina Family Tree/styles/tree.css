@@ -1,0 +1,49 @@
+main #tree {
+    width: 90%;
+   /*  display: flex;
+    flex-direction: column; */
+    margin: 20px auto;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      ". . . . top top . . . ."
+      ". . middle1 middle1 . . middle2 middle2 . ."
+      ". bottom1 bottom1 bottom2 bottom2 bottom3 bottom3 bottom4 bottom4 .";
+}
+
+main #tree-box-1 {
+    grid-area: top;
+}
+
+main #tree-box-2 {
+    grid-area: middle1;
+}
+
+main #tree-box-3 {
+    grid-area: middle2;
+}
+
+main #tree-box-4 {
+    grid-area: bottom1;
+}
+
+main #tree-box-5 {
+    grid-area: bottom2;
+}
+
+main #tree-box-6 {
+    grid-area: bottom3;
+}
+
+main #tree-box-7 {
+    grid-area: bottom4;
+}
+main #tree-box-1, #tree-box-2, #tree-box-3, #tree-box-4, #tree-box-5, #tree-box-6, #tree-box-7 {
+    margin: 50px 20px;
+    padding: 5px 10px;
+    background-color: rgb(252, 222, 157);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
